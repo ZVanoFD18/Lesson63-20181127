@@ -1,0 +1,250 @@
+@import "reset.css";
+
+body {
+    background-image: url("../img/background.png");
+}
+
+.page__row {
+    display: block;
+    width: 100%;
+}
+
+.page__cell {
+    max-width: 1152px;
+    margin: 0 auto;
+    /*padding: 0 10px;*/
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+    position: relative;
+}
+.row__top{
+    background-image: url("../img/head-background.png");
+}
+.cell__top {
+    --display: flex;
+    --flex-wrap: wrap;
+    --flex-direction: row;
+    height: 360px;
+    border: 1px solid yellow;
+}
+
+.cell__top > * {
+    --border: 1px solid red;
+    box-sizing: border-box;
+}
+
+/** --------------------------------------
+ * LOGO
+ */
+.block__logo {
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+    height: 79px;
+    padding-top: 50px;
+    padding-left: 20px;
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.block__slider {
+    position: absolute;
+    top: 47px;
+    z-index: 10;
+    height: 90px;
+}
+
+.block__registration {
+    width: 70%;
+    display: none;
+}
+
+.block__user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: 678px;
+    --width: 70%;
+    --display: flex;
+    --flex-wrap: wrap;
+    --flex-direction: row;
+    --justify-content: flex-end;
+    --border: 1px solid blue;
+}
+
+.block__user__item {
+    position: absolute;
+    --border: 1px solid blue;
+}
+
+.block__user__item.user__login {
+    left: 0;
+    top: 15px;
+}
+
+.block__user__item.user__profile {
+    left: 0;
+    bottom: 15px;
+}
+
+.block__user__item.user-icon {
+    left: 118px;
+    top: 15px;
+}
+
+.block__user__item.user__status {
+    left: 190px;
+    top: 15px;
+}
+
+.block__user__item.user__points {
+    left: 190px;
+    bottom: 15px;
+}
+
+.block__user__item.user__account__label {
+    left: 290px;
+    top: 15px;
+}
+
+.block__user__item.user__account__value{
+    left: 290px;
+    bottom: 15px;
+}
+
+.block__user__item.user__revert__label{
+    left: 390px;
+    top: 15px;
+}
+
+.block__user__item.user__revert__value{
+    left: 390px;
+    bottom: 15px;
+}
+
+.block__user__item.user__cachebox{
+    left: 490px;
+    top: 30px;
+}
+.block__user__item.user__exit{
+    left: 575px;
+    top: 40px;
+}
+.block__user__item.user__lang{
+    --left: 590px;
+    right: 0;
+    top: 30px;
+}
+
+.user__login, .user__status, .user__account__label, .user__revert__label {
+    color: #cccc99;
+    font-size: 12pt;
+    font-family: 'Coourier', sans-serif;
+}
+
+.user__profile, .user__account__value, .user__revert__value {
+    color: #76a82b;
+    font-size: 12pt;
+    font-family: 'Coourier', sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid #76a82b;
+}
+.user__points{
+    color: #d7a909;
+    font-size: 8pt;
+    font-family: 'Coourier', sans-serif;
+}
+
+.user__cachebox{
+    background-image: url("../img/button-cashbox1-1.png");
+    padding: 3px;
+    width: 71px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-radius: 6px;
+}
+.user__exit{
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/button-exit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+.user__lang{
+    width: 75px;
+    height: 34px;
+    background-image: url("../img/button-lang.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nav, .block__menu__top, .menu__top__item {
+    display: inline-block;
+    z-index: 20;
+}
+
+.nav {
+    position: absolute;
+    top: 95px;
+    right: 0;
+    --width: 100%;
+    text-align: right;
+    z-index: 30;
+}
+
+.menu__top__item {
+    height: 30px;
+    padding: 6px;
+}
+
+.menu__top__item:hover {
+    background-image: url("../img/button-rectangle.png");
+    background-repeat: no-repeat;
+    --background-size: contain;
+    background-size: 100% 110%;
+}
+
+.menu__top__item a {
+    color: #ffec00;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.menu__top__item:hover a {
+    color: #fff684;
+}
+
+.button_register,
+.button_cachbox {
+    position: absolute;
+    top: 270px;
+    width: 201px;
+    height: 60px;
+    z-index: 30;
+}
+
+.button_register {
+    right: 255px;
+    background-image: url("../img/button-register.png");
+    cursor: pointer;
+}
+
+.button_cachbox {
+    background-image: url("../img/button-cashbox.png");
+    right: 20px;
+    cursor: pointer;
+}
